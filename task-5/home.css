@@ -1,0 +1,281 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+}
+
+/* Header */
+header {
+    background-color: #004AAD;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+nav .dropdown-button{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden; 
+    margin: 0;
+    padding: 0;
+    justify-self: flex-start;
+       
+}
+.dropdown,.sub-dropdown{
+    position: relative;
+}
+.dropdown-content {
+    display:none;
+    position: absolute;
+
+    background-color: #f0f4ff;
+
+    width: 250px;
+    height: fit-content;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  
+}
+  .sub-dropdown-content{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100px; /* Open to the LEFT */
+    height: fit-content;
+
+
+    background-color: #f0f4ff;
+
+
+    width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.Company_name {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+.header-right{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Aligns items to the left */
+    gap: 20px; /* Optional: space between items */
+  
+}
+.header-right a {
+    color: white;
+    
+    text-decoration: none;
+    
+    margin: 0 15px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.header-right .dropdown-button{
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+
+
+
+}
+
+ .dropdown:hover .dropdown-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.sub-dropdown .dropdown-button{
+    color: black;
+    font-size: 18px;
+    font-weight: 100;
+
+}
+.sub-dropdown:hover .sub-dropdown-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-content a{
+    color: black;
+    font-size: 18px;
+    font-weight: 100;
+}
+.header-right a:hover {
+    color: #FFC107;
+}
+
+main {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.home{
+    background: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f') no-repeat center center/cover;
+    height: 400px;
+    color: white;
+    display: flex;
+    padding: 20px;
+    justify-content: center;  
+    align-items: center;     
+    text-align: center;
+    position: relative;
+
+
+
+}
+
+.main-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    margin: auto;
+    border-radius: 10px;
+    max-width: 600px;
+    }
+
+.main-content h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.main-content p {
+    font-size: 18px;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 0;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    border-radius: 50%;
+    transition: 0.13s;
+}
+
+.social-media a img:hover {
+    transform: scale(1.1);
+}
+.trending-courses {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.trending-courses h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-content h3 {
+    font-size: 20px;
+    color: #004AAD;
+    margin-bottom: 5px;
+}
+
+.card-content p {
+    font-size: 14px;
+    color: #555;
+}
+.course-details-btn{
+    padding: 12px 15px;
+    background-color:#004AAD ;
+    color: white;
+    font-size: 15px;
+    box-shadow: none;
+    border-color: transparent;
+    border-radius: 5px;
+}
+.course-details-btn:hover{
+    transform: translateY(5px);
+
+}
+.course-details{
+    display: none;
+}
+:target {
+    display: block;
+}
+
+
+@media(max-width: 600px) {
+    .card-container {
+      display: grid;
+      grid-template-columns: 1fr; 
+      gap: 1rem; 
+    }
+    .card{
+        width: 100%;
+    }
+  }
+    
