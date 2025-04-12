@@ -4,6 +4,10 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f5f7fa;
 }
+html {
+    scroll-behavior: smooth;
+}
+
 
 /* Header */
 header {
@@ -247,26 +251,75 @@ footer {
     font-size: 14px;
     color: #555;
 }
-.course-details-btn{
-    padding: 12px 15px;
-    background-color:#004AAD ;
-    color: white;
-    font-size: 15px;
-    box-shadow: none;
-    border-color: transparent;
-    border-radius: 5px;
-}
-.course-details-btn:hover{
-    transform: translateY(5px);
-
-}
-.course-details{
+.modal-checkbox {
     display: none;
-}
-:target {
-    display: block;
-}
-
+  }
+  
+  .modal-overlay,
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+  }
+  
+  .modal-overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    z-index: 100;
+  }
+  
+  .modal {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    z-index: 101;
+  }
+  
+  /* Show modal when checkbox is checked */
+  .modal-checkbox:checked ~ .modal-overlay,
+  .modal-checkbox:checked ~ .modal {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  /* Modal Animation */
+  .modal-checkbox:checked ~ .modal {
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Buttons */
+  .open-modal-btn,
+  .enroll-btn,
+  .close-btn {
+    display: inline-block;
+    padding: 10px 16px;
+    background: #007bff;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    background: none;
+    font-size: 24px;
+    color: #333;
+  }
+  
 
 @media(max-width: 600px) {
     .card-container {
