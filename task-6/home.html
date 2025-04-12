@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>static webpage task-1</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="header-left">
+
+            <img src="https://img.freepik.com/free-vector/vector-education-logo_779267-2083.jpg" alt="" class="logo"></img>
+            <h1 class="Company_name">learnpro</h1>
+            </div>
+            <div class="header-right">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <div class="dropdown">
+
+                <button class="dropdown-button">Courses <i class="fa fa-caret-down"></i></button>
+
+                    <div class="dropdown-content">
+                      <a href="">Web Development</a>
+                      <a href="">Data Science</a>
+                      <div class="sub-dropdown">
+                        <button class="dropdown-button">Design <i class="fa fa-caret-down"></i></button>
+                        <div class="sub-dropdown-content">
+                          <a href="">UI/UX</a>
+                          <a href="">Graphic Design</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+
+                  <button class="dropdown-button">Get Certified <i class="fa fa-caret-down"></i></button>
+
+                    <div class="dropdown-content">
+                      <a href="">AWS Certification</a>
+                      <a href="">Google Cloud</a>
+                    </div>
+                  </div>
+                    <a href="">Contact</a>
+                <a href="">Login</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="home">
+        <div class="main-content">
+            <h2>Welcome to LearnPro</h2>
+            <p>Enhance your skills with top-quality courses and get certified by industry experts.</p>
+        </div>
+    </section>
+    <section class="trending-courses">
+        <h2>Trending Courses</h2>
+        <div class="card-container">
+
+            <!-- Web Development -->
+            <div class="card">
+              <img src="https://www.elegantthemes.com/blog/wp-content/uploads/2018/12/top11.png" alt="Web Development">
+              <div class="card-content">
+                <h3>Full Stack Web Development</h3>
+                <p><strong>Category:</strong> Web Development</p>
+                <p>Master front-end & back-end technologies like HTML, CSS, JavaScript, Node.js, and React.</p>
+          
+                <label for="modal-toggle-1" class="open-modal-btn">See Course Details</label>
+                <input type="checkbox" id="modal-toggle-1" class="modal-checkbox">
+          
+                <div class="modal-overlay"></div>
+                <div class="modal">
+                  <label for="modal-toggle-1" class="close-btn">&times;</label>
+                  <h2>Full Stack Web Development</h2>
+                  <p><strong>Duration:</strong> 6 months</p>
+                  <p><strong>Level:</strong> Beginner to Advanced</p>
+                  <p><strong>Topics:</strong> HTML, CSS, JavaScript, React, Node.js, Express, MongoDB, Deployment</p>
+                  <p><strong>Outcome:</strong> Build and deploy full-stack applications</p>
+                  <a href="" class="enroll-btn">Enroll Now</a>
+                </div>
+              </div>
+            </div>
+          
+            <!-- Data Science -->
+            <div class="card">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2RzGeikAnS5cPgbYPavFrQmzbb6FVoTjWPw&s" alt="Data Science">
+              <div class="card-content">
+                <h3>Data Science & Analytics</h3>
+                <p><strong>Category:</strong> Data Science</p>
+                <p>Learn Python, machine learning, and AI to analyze data and make intelligent decisions.</p>
+          
+                <label for="modal-toggle-2" class="open-modal-btn">See Course Details</label>
+                <input type="checkbox" id="modal-toggle-2" class="modal-checkbox">
+          
+                <div class="modal-overlay"></div>
+                <div class="modal">
+                  <label for="modal-toggle-2" class="close-btn">&times;</label>
+                  <h2>Data Science & Analytics</h2>
+                  <p><strong>Duration:</strong> 5 months</p>
+                  <p><strong>Level:</strong> Intermediate</p>
+                  <p><strong>Topics:</strong> Python, Pandas, NumPy, Machine Learning, Visualization</p>
+                  <p><strong>Outcome:</strong> Build ML models and interpret real-world data</p>
+                  <a href="" class="enroll-btn">Enroll Now</a>
+                </div>
+              </div>
+            </div>
+          
+            <!-- Graphic Design -->
+            <div class="card">
+              <img src="https://blog-frontend.envato.com/cdn-cgi/image/width=1200,quality=75,format=auto,fit=crop,height=630/uploads/sites/2/2022/05/graphic-design-tools.png" alt="Graphic Design">
+              <div class="card-content">
+                <h3>Graphic Design Mastery</h3>
+                <p><strong>Category:</strong> Design</p>
+                <p>Create stunning designs with Photoshop, Illustrator, and Figma.</p>
+          
+                <label for="modal-toggle-3" class="open-modal-btn">See Course Details</label>
+                <input type="checkbox" id="modal-toggle-3" class="modal-checkbox">
+          
+                <div class="modal-overlay"></div>
+                <div class="modal">
+                  <label for="modal-toggle-3" class="close-btn">&times;</label>
+                  <h2>Graphic Design Mastery</h2>
+                  <p><strong>Duration:</strong> 3 months</p>
+                  <p><strong>Level:</strong> Beginner</p>
+                  <p><strong>Topics:</strong> Adobe Suite, Color Theory, Typography, Branding</p>
+                  <p><strong>Outcome:</strong> Create a professional design portfolio</p>
+                  <a href="" class="enroll-btn">Enroll Now</a>
+                </div>
+              </div>
+            </div>
+          
+          </div>
+              
+            <!-- Cloud Computing -->
+        </div>
+    </section>
+    <section class="course-search">
+      <h2>Search Courses</h2>
+
+      <div class="tabs-container">
+        <input type="radio" id="tab1" name="tab" checked>
+        <input type="radio" id="tab2" name="tab">
+        <input type="radio" id="tab3" name="tab">
+      
+        <div class="tabs">
+          <label for="tab1" class="tab">Featured</label>
+          <label for="tab2" class="tab">New</label>
+          <label for="tab3" class="tab">Top Categories</label>
+        </div>
+      
+        <div class="tab-content">
+          <div class="tab-panel" id="content1">
+            <h3>🔥 Featured Courses</h3>
+            <ul>
+              <li>Full Stack</li>
+              <li>Data Science</li>
+              <li>AI</li>
+            </ul>
+          </div>
+          
+          <div class="tab-panel" id="content2">
+            <h3>🆕 New Courses</h3>
+            <ul>
+              <li>Prompt Engineering</li>
+              <li>Kotlin Basics</li>
+            </ul>
+          </div>
+          
+          <div class="tab-panel" id="content3">
+            <h3>📚 Categories</h3>
+            <ul>
+              <li>Design</li>
+              <li>Marketing</li>
+              <li>Development</li>
+            </ul>
+          </div>
+        </div>
+              </div>
+       
+
+    </section>
+        </main>
+
+        <footer>
+        <div class="contanct-info">
+            <h3>Follow Us On</h3>
+            <div class="social-media">
+                <a><image src="https://static.vecteezy.com/system/resources/previews/008/385/572/non_2x/twitter-social-media-icon-abstract-symbol-illustration-free-vector.jpg"/></a>
+                <a><image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPnv18lwEfBrNn-35bdxplndXNDSXxWI8f6Q&s"/></a>
+                <a><image src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/CIS-A2K_Instagram_Icon_%28Black%29.svg/2048px-CIS-A2K_Instagram_Icon_%28Black%29.svg.png"></image></a>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>
