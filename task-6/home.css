@@ -357,16 +357,19 @@ footer {
 
   }
   .tab-content .tab-panel {
-    display: none;
-    padding: 10px;
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+    padding: 0 10px;
     background: white;
     border-radius: 0 0 10px 10px;
-    text-decoration: none;
-    list-style:armenian;
+    list-style: armenian;
     text-align: left;
     justify-self: center;
     margin: 0;
-
+    transition: opacity 0.5s ease, visibility 0.5s ease, height 0.5s ease, padding 0.5s ease;
+  
   }
   .course-search h2{
     font-size: 28px;
@@ -376,9 +379,10 @@ footer {
   }
   #tab1:checked ~ .tab-content #content1,  #tab2:checked ~ .tab-content #content2
 ,  #tab3:checked ~ .tab-content #content3{
-    display: block;
-}
-.tab-panel{
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+  
 }
   
   
