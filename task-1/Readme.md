@@ -22,3 +22,5 @@ How it Works
 Media queries make the site mobile-friendly by adapting font sizes and layout.
 
 Screenshot
+![Screenshot (64)](https://github.com/user-attachments/assets/5110a632-784a-412e-b8db-13fbca736abc)
+
